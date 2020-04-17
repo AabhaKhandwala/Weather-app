@@ -1,0 +1,24 @@
+{
+  "name": "weather-app-aabha",
+  "version": "1.0.0",
+  "description": "\"display weather'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AabhaKhandwala/Weather-app.git"
+  },
+  "author": "aabha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AabhaKhandwala/Weather-app/issues"
+  },
+  "homepage": "https://github.com/AabhaKhandwala/Weather-app#readme",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "request": "^2.88.2",
+    "yargs": "^15.3.1"
+  }
+}
