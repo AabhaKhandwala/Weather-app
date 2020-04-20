@@ -1,11 +1,9 @@
 //var Moment = require('moment');
-var CurrentTime = moment();
-
-
+//var CurrentTime = moment();
 //const request = require ('request');
 //const argv = require ('yargs').argv;
 
- let apiKey = '4890ec8c1a44083580937d9c9371b03a';
+ 
  //let city = 'charlotte';/*argv.c || 'charlotte';*/
  //let zipcode = "28255";
  //let countrycode = 'US';
@@ -39,7 +37,7 @@ var CurrentTime = moment();
 //             console.log(message);
 //         }
 //   });
-
+let apiKey = '4890ec8c1a44083580937d9c9371b03a';
 var toHtml = $('#btn').on('click',function(){
   var input= $('#zipinpt').val();
        console.log(input);
@@ -51,7 +49,10 @@ var toHtml = $('#btn').on('click',function(){
         var desc=result.weather[0].description;
         var icon=("<img src='http://openweathermap.org/img/w/" + result.weather[0].icon + ".png'>");
         var hiNlow=`${Math.round(result.main.temp_max)} &#176;F/ ${Math.round(result.main.temp_min)}  &#176;F`;
-        var time=CurrentTime.format('llll');
+        var t=result.timezone;
+        //console.log(t);
+        //var time=CurrentTime.format('llll');
+        var time=moment().utcOffset(t/60).format('llll');
         $('#city').html(city);
         $('#temp').html(temp);
         $('#desc').html(desc);

@@ -11,6 +11,24 @@ body{
     background-position: top center;
 }
 
+h2{
+    color: #442828;
+    font-size: 75px;
+    font-style: italic;
+    font-weight: 900;
+    text-shadow: 2px 8px rgba(187, 170, 170, 0.6);
+    font: outline;
+    transition: 0.2s ease-out;
+    flex: 1 1 100 ;
+    padding: 25px 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -21,7 +39,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 15px 15px;
+    padding: 30px 15px 15px;
 }
 
 header input {
